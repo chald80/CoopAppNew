@@ -7,9 +7,15 @@
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Image</th>
+            <th>VareNummer</th>
+            <th>Navn</th>
+            <th>Pris</th>
+            <th>Producent</th>
+            <th>SidsteSalgsDato</th>
+            <th>Fedt</th>
+            <th>Kulhydrat</th>
+            <th>Protein</th>
+            <th>ImageName</th>
             <th class="text-right">Price</th>
         </tr>
     </thead>
@@ -18,22 +24,26 @@
         <tbody>
             @foreach (var item in Model.OrderedFoods)
             {
-                <tr>
-                    <td class="text-center">@item.VareNummer</td>
-                    <td class="text-left">@item.Navn</td>
-                    <td>
-                        <img src="~/Foods/@item.ImageName" width="60" height="70">
-                    </td>
-                    <td class="text-right">@item.Pris.ToString("c")</td>
-                    <td>
-                        <form method="post">
-                            <button asp-page-handler="Delete" asp-route-isbn="@item.VareNummer"
-                                    class="btn btn-danger btn-group-lg pull-right">
-                                Delete-From-Chart
-                            </button>
-                        </form>
-                    </td>
-                </tr>
+            <tr>
+                <td>@item.VareNummer</td>
+                <td>@item.Navn</td>
+                <td>@item.Pris</td>
+                <td>@item.Producent</td>
+                <td>@item.SidsteSalgsDato</td>
+                <td>@item.Fedt</td>
+                <td>@item.Kulhydrat</td>
+                <td>@item.Protein</td>
+                <td><img src="~/Images/@item.ImageName" width="60" height="70"></td>
+                <td class="text-right">@item.Pris.ToString("c")</td>
+                <td>
+                    <form method="post">
+                        <button asp-page-handler="Delete" asp-route-isbn="@item.VareNummer"
+                                class="btn btn-danger btn-group-lg pull-right">
+                            Delete-From-Chart
+                        </button>
+                    </form>
+                </td>
+            </tr>
             }
         </tbody>
         <tfoot>
