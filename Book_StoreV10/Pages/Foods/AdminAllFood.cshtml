@@ -31,33 +31,15 @@
         @foreach (var item in Model.Foods)
         {
         <tr>
-            <td>
-                @item.VareNummer
-            </td>
-            <td>
-                @item.Navn
-            </td>
-            <td>
-                @item.Pris
-            </td>
-            <td>
-                @item.Producent
-            </td>
-            <td>
-                @item.SidsteSalgsDato
-            </td>
-            <td>
-                @item.Fedt
-            </td>
-            <td>
-                @item.Kulhydrat
-            </td>
-            <td>
-                @item.Protein
-            </td>
-            <td>
-                <img src="~/Images/@item.ImageName" width="60" height="70">
-            </td>
+            <td>@item.VareNummer</td>
+            <td>@item.Navn</td>
+            <td>@item.Pris</td>
+            <td>@item.Producent</td>
+            <td>@item.SidsteSalgsDato</td>
+            <td>@item.Fedt</td>
+            <td>@item.Kulhydrat</td>
+            <td>@item.Protein</td>
+            <td><img src="~/Images/@item.ImageName" width="60" height="70"></td>
             <td>
                 <p>
                     <a asp-page="UpdateFood" asp-route-id="@item.VareNummer">Edit</a> |
