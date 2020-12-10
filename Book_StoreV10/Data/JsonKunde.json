@@ -1,0 +1,22 @@
+[
+  {
+    "MellemsID": 1,
+    "Navn": "Jacob",
+    "Adresse": "Jyllinge",
+    "PostNR": "4040",
+    "Mail": "null@null.null",
+    "Telefon": "123",
+    "Password": "null"
+
+  },
+  {
+    "MellemsID": 133,
+    "Navn": "Bo",
+    "Adresse": "Der",
+    "PostNR": "2020",
+    "Mail": "123",
+    "Telefon": "123",
+    "Password": "123"
+
+  }
+]

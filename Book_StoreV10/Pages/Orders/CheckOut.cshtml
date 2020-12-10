@@ -1,0 +1,30 @@
+﻿@page
+@model CoopApp.CheckOutModel
+@{ ViewData["Title"] = "CheckOut"; }
+
+<h2 style="glyph-orientation-horizontal">Check-Out</h2>
+
+<form method="post">
+    <h3>Please, enter you  information</h3>
+
+    <div class="form-group">
+        <label>Vælg kunde</label><select asp-for="@Model.Student.Navn" class="form-control">
+            @foreach (var item in Model.Kunder)
+            {
+<option value="@item.Navn">@item.Navn</option>
+}
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Id:</label><input asp-for="@Model.Student.Id" class="form-control" />
+    </div>
+
+
+    <div class="form-group">
+        <label>Section:</label><input asp-for="@Model.Student.Section" class="form-control" />
+    </div>
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Complete Order" />
+    </div>
+</form>
+

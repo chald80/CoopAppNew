@@ -1,0 +1,111 @@
+﻿@page
+@model CoopApp.AllStatisticModel
+@{
+    ViewData["Title"] = "Statistic";
+}
+
+
+<style>
+    tbody {
+        text-align: center;
+        color: blueviolet
+    }
+</style>
+
+<form>
+    <p>
+        Search: <input type="text" asp-for="FilterCriteria" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<h1> Statistic </h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Navn </th>
+            <th>Adresse</th>
+            <th>Mellems ID</th>
+            <th>Post Nummer</th>
+            <th>Order ID</th>
+            <th>DateTime</th>
+            <th>PostNummer</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Orders.Count != 0)
+        {
+            @foreach (var item in Model.Orders)
+            {
+        <tr>
+            <td>
+                @item.Navn
+            </td>
+            <td>
+                @item.Adresse
+            </td>
+            <td>
+                @item.MellemsID
+            </td>
+            <td>
+                @item.PostNR
+            </td>
+            <td>
+                @item.OrderID
+            </td>
+            <td>
+        </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
+
+
+<h2>Index</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Statistic" asp-route-sortOrder="@ViewData["Statistic"]">@Html.DisplayNameFor(model => model.Kunde.Navn)</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order.MellemsID)
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["Statistic"]">@Html.DisplayNameFor(model => model.Order.OrderID)</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["Statistic"]">@Html.DisplayNameFor(model => model.Order.PostNummer)</a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Orders)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Navn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MellemsID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PostNummer)
+                </td>
+                <td>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h5>The number of Orders is : @Model.Orders.Count</h5>
