@@ -42,5 +42,16 @@
     "Kulhydrat": 12.0,
     "Protein": 12.0,
     "ImageName": "vxvv"
+  },
+  {
+    "VareNummer": 80.0,
+    "Navn": "Fisk",
+    "Pris": 200.0,
+    "Producent": "Fisk",
+    "SidsteSalgsDato": 12354.0,
+    "Fedt": 50.0,
+    "Kulhydrat": 50.0,
+    "Protein": 52.0,
+    "ImageName": "bo"
   }
 ]
