@@ -32,7 +32,25 @@
                 @item.Navn
             </td>
             <td>
-                <img src="~/Foods/@item.ImageName" width="80" height="70">
+                @item.Pris
+            </td>
+            <td>
+                @item.Producent
+            </td>
+            <td>
+                @item.SidsteSalgsDato
+            </td>
+            <td>
+                @item.Fedt
+            </td>
+            <td>
+                @item.Kulhydrat
+            </td>
+            <td>
+                @item.Protein
+            </td>
+            <td>
+                <img src="~/Images/@item.ImageName" width="60" height="70">
             </td>
             <td>
                 <a asp-page="/Orders/ShoppingCart" asp-route-isbn="@item.VareNummer"
