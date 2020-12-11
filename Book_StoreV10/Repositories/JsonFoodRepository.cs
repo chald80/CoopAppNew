@@ -1,58 +1,64 @@
-﻿using CoopApp.Interfaces;
-using CoopApp.Models;
+﻿using CoopApp.Models;
+using CoopApp.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoopApp.Repositories
+namespace CoopApp.Services
 {
-    public class JsonFoodRepository:IFoodsRepository
+    public class JsonFoodRepository : IFoodsRepository
     {
-        string JsonFileName = @"C:\Users\hald_\OneDrive\Dokumenter\skole\CoopAppAnders\CoopAppAnders\CoopApp-master\Book_StoreV10\Data\JsonFoodOrders.json";
+        string JsonFileName = @"C:\Users\hald_\OneDrive\Dokumenter\skole\CoopAppAnders\CoopAppAnders\CoopApp-master\Book_StoreV10\Data\JsonFoodsStore.json";
+
+        public void AddFood(Food food)
+        {
+            Dictionary<int, Food> foods = GetAllFoods();
+            foods.Add(food.VareNummer, food);
+            JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
+        }
 
         public Dictionary<int, Food> GetAllFoods()
         {
             return JsonFileReader.ReadJsonFood(JsonFileName);
         }
-        public void AddFood(Food Food)
+        public Dictionary<int, Food> FilterFood(string criteria)
         {
             Dictionary<int, Food> foods = GetAllFoods();
-            foods.Add(Food.VareNummer, Food);
-            JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
+            Dictionary<int, Food> filteredFoods = new Dictionary<int, Food>();
+            foreach (var p in foods.Values)
+            {
+                if (p.Navn.StartsWith(criteria))
+                {
+                    filteredFoods.Add(p.VareNummer, p);
+                }
+            }
+            return filteredFoods;
         }
+
         public Food GetFood(int VareNummer)
         {
-            Dictionary<int, Food> pizzas = GetAllFoods();
-            Food foundPizza = pizzas[VareNummer];
-            return foundPizza;
-        }
-
-        public void DeleteFood(int VareNummer)
-        {
-            {
-                Dictionary<int, Food> pizzas = GetAllFoods();
-                pizzas.Remove(VareNummer);
-                JsonFileWritter.WriteToJsonFood(pizzas, JsonFileName);
-
-            }
+            Dictionary<int, Food> foods = GetAllFoods();
+            Food foundFood = foods[VareNummer];
+            return foundFood;
         }
 
         public void UpdateFood(Food food)
         {
             Dictionary<int, Food> foods = GetAllFoods();
             Food foundFood = foods[food.VareNummer];
-            foundFood.Navn = food.Navn;
             foundFood.VareNummer = food.VareNummer;
+            foundFood.Navn = food.Navn;
             foundFood.Pris = food.Pris;
             foundFood.Producent = food.Producent;
-            foundFood.SidsteSalgsDato = food.SidsteSalgsDato;
-            foundFood.Fedt = food.Fedt;
-            foundFood.Kulhydrat = food.Kulhydrat;
-            foundFood.Protein = food.Protein;
             foundFood.ImageName = food.ImageName;
+            JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
+        }
 
-
+        public void DeleteFood(int Varenummer)
+        {
+            Dictionary<int, Food> foods = GetAllFoods();
+            foods.Remove(Varenummer);
             JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
         }
     }

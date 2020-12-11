@@ -28,7 +28,7 @@ namespace CoopApp
         public IActionResult OnPost(int VareNummer)
         {
             catalog.DeleteFood(VareNummer);
-            return RedirectToPage("GetAllFood");
+            return RedirectToPage("AdminAllFood");
         }
     }
 }

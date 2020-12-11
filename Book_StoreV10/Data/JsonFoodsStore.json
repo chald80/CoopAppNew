@@ -1,25 +1,14 @@
 {
-  "0": {
-    "VareNummer": 55,
-    "Navn": "kød",
-    "Pris": 444.0,
-    "Producent": "hhfd",
-    "SidsteSalgsDato": 1223231.0,
-    "Fedt": 12.0,
-    "Kulhydrat": 12.0,
-    "Protein": 12.0,
-    "ImageName": "vxvv"
-  },
   "65": {
     "VareNummer": 65,
-    "Navn": "kød",
+    "Navn": "kødh",
     "Pris": 444.0,
     "Producent": "hhfd",
     "SidsteSalgsDato": 1223231.0,
     "Fedt": 12.0,
     "Kulhydrat": 12.0,
     "Protein": 12.0,
-    "ImageName": "vxvv"
+    "ImageName": null
   },
   "62": {
     "VareNummer": 62,
@@ -41,6 +30,6 @@
     "Fedt": 12.0,
     "Kulhydrat": 12.0,
     "Protein": 12.0,
-    "ImageName": "vxvv"
+    "ImageName": null
   }
 }
