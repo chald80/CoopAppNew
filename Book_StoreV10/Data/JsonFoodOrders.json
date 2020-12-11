@@ -1,94 +1,146 @@
 [
-    {
-        "OrderID": 1,
-        "PostNummer": 34,
-        "Student": {
-            "Id": 1,
-            "Name": "mohammed",
-            "Section": 1
-        },
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "mohammed",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-11-06T21:15:00.6206645+01:00"
+  {
+    "PostNummer": 34,
+    "OrderID": 1,
+    "MellemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "2020-11-06T21:15:00.6206645+01:00"
+  },
+  {
+    "PostNummer": 11111,
+    "OrderID": 2,
+    "MellemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      },
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "2020-12-07T21:15:46.7043748+01:00"
+  },
+  {
+    "PostNummer": 234,
+    "OrderID": 3,
+    "MellemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      },
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "2020-12-07T22:38:52.3468223+01:00"
+  },
+  {
+    "PostNummer": 1,
+    "OrderID": 4,
+    "MellemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "2020-12-08T09:37:11.3739441+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 5,
+    "MellemsID": {
+      "MellemsID": 0,
+      "Navn": "Jacob",
+      "Adresse": null,
+      "PostNR": null,
+      "Mail": null,
+      "Telefon": null,
+      "Password": null,
+      "OrderID": null,
+      "Section": 0,
+      "Id": 223,
+      "Name": null
     },
-    {
-        "OrderID": 2,
-        "PostNummer": 11111,
-        "Student": {
-            "Id": 4,
-            "Name": "ib",
-            "Section": 0
-        },
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            },
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-12-07T21:15:46.7043748+01:00"
-    },
-    {
-        "OrderID": 3,
-        "PostNummer": 234,
-        "Student": {
-            "Id": 3,
-            "Name": "ib",
-            "Section": 0
-        },
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            },
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-12-07T22:38:52.3468223+01:00"
-    },
-    {
-        "OrderID": 4,
-        "PostNummer": 1,
-        "Kunde": [
-            {
-                "Navn": "Jacob"
-            }
-        ],
-
-
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-12-08T09:37:11.3739441+01:00"
-    }
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "DateTime": "2020-12-11T10:28:02.2392298+01:00"
+  }
 ]
