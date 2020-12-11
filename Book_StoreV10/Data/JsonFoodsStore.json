@@ -1,41 +1,8 @@
-[
-  {
-    "VareNummer": 0.0,
-    "Navn": null,
-    "Pris": 0.0,
-    "Producent": null,
-    "SidsteSalgsDato": 0.0,
-    "Fedt": 0.0,
-    "Kulhydrat": 0.0,
-    "Protein": 0.0,
-    "ImageName": null
-  },
-  {
-    "VareNummer": 0.0,
-    "Navn": null,
-    "Pris": 0.0,
-    "Producent": null,
-    "SidsteSalgsDato": 0.0,
-    "Fedt": 0.0,
-    "Kulhydrat": 0.0,
-    "Protein": 0.0,
-    "ImageName": null
-  },
-  {
-    "VareNummer": 55.0,
+{
+  "0": {
+    "VareNummer": 55,
     "Navn": "kød",
     "Pris": 444.0,
-    "Producent": "hhfd",
-    "SidsteSalgsDato": 1223231.0,
-    "Fedt": 0.0,
-    "Kulhydrat": 0.0,
-    "Protein": 0.0,
-    "ImageName": null
-  },
-  {
-    "VareNummer": 65.0,
-    "Navn": "kød",
-    "Pris": 70.0,
     "Producent": "hhfd",
     "SidsteSalgsDato": 1223231.0,
     "Fedt": 12.0,
@@ -43,15 +10,37 @@
     "Protein": 12.0,
     "ImageName": "vxvv"
   },
-  {
-    "VareNummer": 80.0,
-    "Navn": "Fisk",
-    "Pris": 200.0,
-    "Producent": "Fisk",
-    "SidsteSalgsDato": 12354.0,
-    "Fedt": 50.0,
-    "Kulhydrat": 50.0,
-    "Protein": 52.0,
-    "ImageName": "bo"
+  "65": {
+    "VareNummer": 65,
+    "Navn": "kød",
+    "Pris": 444.0,
+    "Producent": "hhfd",
+    "SidsteSalgsDato": 1223231.0,
+    "Fedt": 12.0,
+    "Kulhydrat": 12.0,
+    "Protein": 12.0,
+    "ImageName": "vxvv"
+  },
+  "62": {
+    "VareNummer": 62,
+    "Navn": "kød",
+    "Pris": 444.0,
+    "Producent": "hhfd",
+    "SidsteSalgsDato": 1223231.0,
+    "Fedt": 12.0,
+    "Kulhydrat": 12.0,
+    "Protein": 12.0,
+    "ImageName": "vxvv"
+  },
+  "55": {
+    "VareNummer": 55,
+    "Navn": "kød",
+    "Pris": 444.0,
+    "Producent": "hhfd",
+    "SidsteSalgsDato": 1223231.0,
+    "Fedt": 12.0,
+    "Kulhydrat": 12.0,
+    "Protein": 12.0,
+    "ImageName": "vxvv"
   }
-]
+}
