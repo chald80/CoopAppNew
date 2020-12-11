@@ -25,17 +25,17 @@
         @foreach (var item in Model.Foods)
         {
         <tr>
-            <td>@item.VareNummer</td>
-            <td>@item.Navn</td>
-            <td>@item.Pris</td>
-            <td>@item.Producent</td>
-            <td>@item.SidsteSalgsDato</td>
-            <td>@item.Fedt</td>
-            <td>@item.Kulhydrat</td>
-            <td>@item.Protein</td>
-            <td><img src="~/Images/@item.ImageName" width="60" height="70"></td>
+            <td>@item.Value.VareNummer</td>
+            <td>@item.Value.Navn</td>
+            <td>@item.Value.Pris</td>
+            <td>@item.Value.Producent</td>
+            <td>@item.Value.SidsteSalgsDato</td>
+            <td>@item.Value.Fedt</td>
+            <td>@item.Value.Kulhydrat</td>
+            <td>@item.Value.Protein</td>
+            <td><img src="~/Images/@item.Value.ImageName" width="60" height="70"></td>
             <td>
-                <a asp-page="/Orders/ShoppingCart" asp-route-isbn="@item.VareNummer"
+                <a asp-page="/Orders/ShoppingCart" asp-route-VareNummer="@item.Key"
                    class="btn btn-success btn-group-lg pull-right">
                     Add To Cart
                 </a>

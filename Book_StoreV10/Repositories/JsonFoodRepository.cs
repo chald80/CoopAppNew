@@ -11,59 +11,49 @@ namespace CoopApp.Repositories
     {
         string JsonFileName = @"C:\Users\hald_\OneDrive\Dokumenter\skole\CoopAppAnders\CoopAppAnders\CoopApp-master\Book_StoreV10\Data\JsonFoodOrders.json";
 
-        public List<Food> GetAllFoods()
+        public Dictionary<int, Food> GetAllFoods()
         {
             return JsonFileReader.ReadJsonFood(JsonFileName);
         }
         public void AddFood(Food Food)
         {
-            List<Food> Foods = GetAllFoods().ToList();
-            Foods.Add(Food);
-            JsonFileWritter.WriteToJsonFood(Foods, JsonFileName);
+            Dictionary<int, Food> foods = GetAllFoods();
+            foods.Add(Food.VareNummer, Food);
+            JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
         }
-        public Food GetFood(double VareNummer)
+        public Food GetFood(int VareNummer)
         {
-            foreach (var b in GetAllFoods())
+            Dictionary<int, Food> pizzas = GetAllFoods();
+            Food foundPizza = pizzas[VareNummer];
+            return foundPizza;
+        }
+
+        public void DeleteFood(int VareNummer)
+        {
             {
-                if (b.VareNummer == VareNummer)
-                    return b;
+                Dictionary<int, Food> pizzas = GetAllFoods();
+                pizzas.Remove(VareNummer);
+                JsonFileWritter.WriteToJsonFood(pizzas, JsonFileName);
+
             }
-            return new Food();
         }
 
-        void IFoodsRepository.DeleteFood(double VareNummer)
+        public void UpdateFood(Food food)
         {
-            throw new NotImplementedException();
+            Dictionary<int, Food> foods = GetAllFoods();
+            Food foundFood = foods[food.VareNummer];
+            foundFood.Navn = food.Navn;
+            foundFood.VareNummer = food.VareNummer;
+            foundFood.Pris = food.Pris;
+            foundFood.Producent = food.Producent;
+            foundFood.SidsteSalgsDato = food.SidsteSalgsDato;
+            foundFood.Fedt = food.Fedt;
+            foundFood.Kulhydrat = food.Kulhydrat;
+            foundFood.Protein = food.Protein;
+            foundFood.ImageName = food.ImageName;
+
+
+            JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
         }
-
-        void IFoodsRepository.UpdateFood(Food food)
-        {
-            throw new NotImplementedException();
-        }
-        /*
-        public void UpdatePizza(Pizza pizza)
-        {
-            Dictionary<int, Pizza> pizzas = AllPizzas();
-            Pizza foundPizza = pizzas[pizza.Id];
-            foundPizza.Id = pizza.Id;
-            foundPizza.Name = pizza.Name;
-            foundPizza.Description = pizza.Description;
-            foundPizza.Price = pizza.Price;
-            foundPizza.ImageName = pizza.ImageName;
-            JsonFileWritter.WriteToJson(pizzas, JsonFileName);
-        }
-
-        public void DeletePizza(int id)
-        {
-            Dictionary<int, Pizza> pizzas = AllPizzas();
-            pizzas.Remove(id);
-            JsonFileWritter.WriteToJson(pizzas, JsonFileName);
-        }
-        */
-
-
-
-
-
     }
 }

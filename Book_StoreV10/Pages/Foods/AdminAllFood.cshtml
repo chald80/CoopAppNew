@@ -31,19 +31,19 @@
         @foreach (var item in Model.Foods)
         {
         <tr>
-            <td>@item.VareNummer</td>
-            <td>@item.Navn</td>
-            <td>@item.Pris</td>
-            <td>@item.Producent</td>
-            <td>@item.SidsteSalgsDato</td>
-            <td>@item.Fedt</td>
-            <td>@item.Kulhydrat</td>
-            <td>@item.Protein</td>
-            <td><img src="~/Images/@item.ImageName" width="60" height="70"></td>
+            <td>@item.Value.VareNummer</td>
+            <td>@item.Value.Navn</td>
+            <td>@item.Value.Pris</td>
+            <td>@item.Value.Producent</td>
+            <td>@item.Value.SidsteSalgsDato</td>
+            <td>@item.Value.Fedt</td>
+            <td>@item.Value.Kulhydrat</td>
+            <td>@item.Value.Protein</td>
+            <td><img src="~/Images/@item.Value.ImageName" width="60" height="70"></td>
             <td>
                 <p>
-                    <a asp-page="UpdateFood" asp-route-id="@item.VareNummer">Edit</a> |
-                    <a asp-page="DeleteFood" asp-route-id="@item.VareNummer">Delete</a>
+                    <a asp-page="UpdateFood" asp-route-VareNummer="@item.Key">Edit</a> |
+                    <a asp-page="DeleteFood" asp-route-VareNummer="@item.Key">Delete</a>
                 </p>
             </td>
         </tr>}
