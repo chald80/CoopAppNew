@@ -9,7 +9,7 @@ namespace CoopApp.Repositories
 {
     public class JsonFoodRepository:IFoodsRepository
     {
-        string JsonFileName = @"C:\Users\Aleksander K S M\Desktop\Projekt 10.12.2020\CoopAppDavid-111220-1342\CoopApp-master\Book_StoreV10\Data\JsonFoodsStore.json";
+        string JsonFileName = @"C:\Users\Anders\OneDrive\Dokumenter\skole\Projekt\CoopAppDavid.AleksEdit.11-12-1455\CoopApp-master\Book_StoreV10\Data\JsonFoodsStore.json";
 
         public List<Food> GetAllFoods()
         {
