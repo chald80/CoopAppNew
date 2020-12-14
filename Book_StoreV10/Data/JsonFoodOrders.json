@@ -2,25 +2,25 @@
 
   {
     "PostNummer": 0,
-    "OrderID": 38,
+    "OrderID": 39,
     "MedlemsID": null,
     "Navn": null,
     "Adresse": null,
     "PostNR": null,
     "Foods": [
       {
-        "VareNummer": 55.0,
-        "Navn": "kød",
-        "Pris": 444.0,
-        "Producent": "hhfd",
-        "SidsteSalgsDato": 1223231.0,
-        "Fedt": 0.0,
-        "Kulhydrat": 0.0,
-        "Protein": 0.0,
-        "ImageName": null
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
       }
     ],
     "Kunde": [],
-    "DateTime": "2020-12-14T10:04:59.823386+01:00"
+    "DateTime": "2020-12-14T11:14:13.8080707+01:00"
   }
 ]
