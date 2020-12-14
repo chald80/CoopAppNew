@@ -12,8 +12,8 @@
         <label>Vælg kunde</label><select asp-for="@Model.kunde.Navn" class="form-control">
             @foreach (var item in Model.Kunder)
             {
-<option value="@item.Navn">@item.Navn</option>
-}
+                <option value="@item.Navn">@item.Navn</option>
+            }
         </select>
     </div>
     <div class="form-group">
