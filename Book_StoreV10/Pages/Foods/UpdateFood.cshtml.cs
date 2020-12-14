@@ -30,7 +30,7 @@ namespace CoopApp
                 return Page();
             }
             catalog.UpdateFood(Food);
-            return RedirectToPage("GetAllFoods");
+            return RedirectToPage("AdminAllFood");
         }
     }
 }

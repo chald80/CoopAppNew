@@ -177,5 +177,29 @@
     ],
     "Kunde": [],
     "DateTime": "2020-12-14T18:27:17.3066035+01:00"
+  },
+  {
+    "PostNummer": 4565,
+    "OrderID": 49,
+    "Levering": "Levering",
+    "MedlemsID": null,
+    "Navn": "Jacob",
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 5100,
+        "Navn": "kødhhh",
+        "Pris": 70.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 12.0,
+        "Kulhydrat": 12.0,
+        "Protein": 12.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-14T21:51:33.1997246+01:00"
   }
 ]

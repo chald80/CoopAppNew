@@ -35,33 +35,21 @@ namespace CoopApp.Repositories
             JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
         }
 
-        void IFoodsRepository.UpdateFood(Food food)
+        public void UpdateFood(Food food)
         {
-            throw new NotImplementedException();
+            Dictionary<int, Food> foods = GetAllFoods();
+            Food foundFood = foods[food.VareNummer];
+            foundFood.VareNummer = food.VareNummer;
+            foundFood.Navn = food.Navn;
+            foundFood.Pris = food.Pris;
+            foundFood.Producent = food.Producent;
+            foundFood.SidsteSalgsDato = food.SidsteSalgsDato;
+            foundFood.Fedt = food.Fedt;
+            foundFood.Kulhydrat = food.Kulhydrat;
+            foundFood.Protein = food.Protein;
+            foundFood.ImageName = food.ImageName;
+            JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
         }
-        /*
-        public void UpdatePizza(Pizza pizza)
-        {
-            Dictionary<int, Pizza> pizzas = AllPizzas();
-            Pizza foundPizza = pizzas[pizza.Id];
-            foundPizza.Id = pizza.Id;
-            foundPizza.Name = pizza.Name;
-            foundPizza.Description = pizza.Description;
-            foundPizza.Price = pizza.Price;
-            foundPizza.ImageName = pizza.ImageName;
-            JsonFileWritter.WriteToJson(pizzas, JsonFileName);
-        }
-
-        public void DeletePizza(int id)
-        {
-            Dictionary<int, Pizza> pizzas = AllPizzas();
-            pizzas.Remove(id);
-            JsonFileWritter.WriteToJson(pizzas, JsonFileName);
-        }
-        */
-
-
-
 
 
     }

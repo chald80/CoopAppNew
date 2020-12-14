@@ -32,6 +32,26 @@
         <span asp-validation-for="@Model.Food.SidsteSalgsDato" class="text-danger"></span>
     </div>
     <div class="form-group">
+        <label asp-for="@Model.Food.Fedt" class="control-label"></label>
+        <input asp-for="@Model.Food.Fedt" class="form-control" />
+        <span asp-validation-for="@Model.Food.Fedt" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Food.Kulhydrat" class="control-label"></label>
+        <input asp-for="@Model.Food.Kulhydrat" class="form-control" />
+        <span asp-validation-for="@Model.Food.Kulhydrat" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Food.Protein" class="control-label"></label>
+        <input asp-for="@Model.Food.Protein" class="form-control" />
+        <span asp-validation-for="@Model.Food.Protein" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Food.ImageName" class="control-label"></label>
+        <input asp-for="@Model.Food.ImageName" class="form-control" />
+        <span asp-validation-for="@Model.Food.ImageName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
         <input type="submit" value="Save" class="btn btn-primary" />
     </div>
 </form>
