@@ -1,0 +1,31 @@
+﻿@page
+@model CoopApp.OrderSortModel
+@{
+}
+
+
+<h1>PostNummer Sort</h1>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>PostNummer</th>
+
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Orders)
+        {
+<tr>
+    <td>@item.PostNummer</td>
+
+    
+
+</tr>
+}
+    </tbody>
+
+</table>

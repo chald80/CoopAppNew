@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace CoopApp.Models
 {
-    public class Order
+    public class Order : IComparable<Order>
     {
-        public string PostNummer { get; set; }
+        public int PostNummer { get; set; }
         public int OrderID { get; set; }
         public string Levering { get; set; }
         public Kunde MedlemsID { get; set; }
@@ -19,8 +19,13 @@ namespace CoopApp.Models
         public List<Food> Foods { get; set; }
         public List<Kunde> Kunde { get; set; }
         public DateTime DateTime { get; set; }
+        public int CompareTo(Order obj)
+        {
+            return this.PostNummer.CompareTo(obj.PostNummer);
+        }
 
-        
+
+
     }
 
 

@@ -12,8 +12,8 @@ namespace CoopApp.Models
         public int MedlemsID { get; set; }
         public string Navn { get; set; }
         public string Adresse { get; set; }
-        public string Post { get; set; }
-        public string Postnummer { get; set; }
+        public int Post { get; set; }
+        public int Postnummer { get; set; }
         public string Mail { get; set; }
         public string Telefon { get; set; }
         public string Password { get; set; }

@@ -2,26 +2,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CoopApp.Interfaces;
-using CoopApp.Models;
-using CoopApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using CoopApp.Models;
+using CoopApp.Interfaces;
 
 namespace CoopApp
 {
     public class AdminAllFoodsModel : PageModel
     {
-
+        [BindProperty]
+        public Food Food { get; set; }
         private IFoodsRepository catalog;
         public AdminAllFoodsModel(IFoodsRepository repository)
         {
             catalog = repository;
         }
-        public List<Food> Foods { get; set; }
+        public Dictionary<VareNummer, Food> Foods { get; set; }
 
-        [BindProperty]
-        public Food Food { get; set; }
+        
+        
         public IActionResult OnGet()
         {
             Foods = catalog.GetAllFoods();

@@ -1,7 +1,7 @@
 [
 
   {
-    "VareNummer": 65.0,
+    "VareNummer": 65,
     "Navn": "kød",
     "Pris": 70.0,
     "Producent": "hhfd",
@@ -12,7 +12,7 @@
     "ImageName": "vxvv"
   },
   {
-    "VareNummer": 80.0,
+    "VareNummer": 80,
     "Navn": "Fisk",
     "Pris": 200.0,
     "Producent": "Fisk",
@@ -23,7 +23,7 @@
     "ImageName": "bo"
   },
   {
-    "VareNummer": 50.0,
+    "VareNummer": 50,
     "Navn": "Røvhuller",
     "Pris": 35.0,
     "Producent": "rdfsdf",
@@ -34,7 +34,7 @@
     "ImageName": "hej.gif"
   },
   {
-    "VareNummer": 51.0,
+    "VareNummer": 51,
     "Navn": "FLÆSK",
     "Pris": 123.0,
     "Producent": "Butchers",

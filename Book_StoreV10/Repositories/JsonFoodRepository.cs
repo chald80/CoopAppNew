@@ -11,17 +11,17 @@ namespace CoopApp.Repositories
     {
         string JsonFileName = @"C:\Users\Anders\OneDrive\Dokumenter\skole\Projekt\CoopAppDavid.AleksEdit.11-12-1455 - Kopi\CoopApp-master\Book_StoreV10\Data\JsonFoodsStore.json";
 
-        public List<Food> GetAllFoods()
+        public Dictionary<VareNummer, Food> GetAllFoods()
         {
             return JsonFileReader.ReadJsonFood(JsonFileName);
         }
         public void AddFood(Food Food)
         {
-            List<Food> Foods = GetAllFoods().ToList();
+            Dictionary<VareNummer, Food> Foods = GetAllFoods().ToList();
             Foods.Add(Food);
             JsonFileWritter.WriteToJsonFood(Foods, JsonFileName);
         }
-        public Food GetFood(double VareNummer)
+        public Food GetFood(int VareNummer)
         {
             foreach (var b in GetAllFoods())
             {
@@ -31,7 +31,7 @@ namespace CoopApp.Repositories
             return new Food();
         }
 
-        void IFoodsRepository.DeleteFood(double VareNummer)
+        void IFoodsRepository.DeleteFood(int VareNummer)
         {
             throw new NotImplementedException();
         }
