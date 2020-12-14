@@ -37,7 +37,7 @@
                 <td class="text-right">@item.Pris.ToString("c")</td>
                 <td>
                     <form method="post">
-                        <button asp-page-handler="Delete" asp-route-isbn="@item.VareNummer"
+                        <button asp-page-handler="Delete" asp-route-vareNummer="@item.VareNummer"
                                 class="btn btn-danger btn-group-lg pull-right">
                             Delete-From-Chart
                         </button>
@@ -58,7 +58,7 @@
 </table>
 <div class="text-center">
     <a asp-page="/Foods/AllFoods" class="btn btn-primary">Continue shopping</a>
-    <a asp-page="/Orders/CheckOut" class="btn btn-primary">Check_Out</a>
+    <a asp-page="/Orders/CheckOut" class="btn btn-primary">Checkout</a>
 </div>
 
 

@@ -9,7 +9,7 @@ namespace CoopApp.Repositories
 {
     public class JsonKundeRepository : IKunderRepository
     {
-        string JsonFileName = @"C:\Users\Anders\OneDrive\Dokumenter\skole\Projekt\CoopApp-master-101220-1209\CoopApp-master\Book_StoreV10\Data\JsonKunde.json";
+        string JsonFileName = @"C:\Users\Aleksander K S M\Desktop\Projekt 10.12.2020\CoopAppDavid-111220-1342\CoopApp-master\Book_StoreV10\Data\JsonKunde.json";
 
         public List<Kunde> GetAllKunder()
         {
@@ -25,7 +25,7 @@ namespace CoopApp.Repositories
         {
             foreach (var b in GetAllKunder())
             {
-                if (b.MellemsID == MedlemsID)
+                if (b.MedlemsID == MedlemsID)
                     return b;
             }
             return new Kunde();

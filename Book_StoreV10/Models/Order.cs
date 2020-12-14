@@ -11,11 +11,12 @@ namespace CoopApp.Models
     {
         public int PostNummer { get; set; }
         public int OrderID { get; set; }          
-        public Kunde MellemsID { get; set; }
+        public Kunde MedlemsID { get; set; }
         public Kunde Navn { get; set; }
         public Kunde Adresse { get; set; }
         public Kunde PostNR { get; set; }
         public List<Food> Foods { get; set; }
+        public List<Kunde> Kunde { get; set; }
         public DateTime DateTime { get; set; }
 
         

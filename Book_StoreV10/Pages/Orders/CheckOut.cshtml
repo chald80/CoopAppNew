@@ -6,9 +6,10 @@
 
 <form method="post">
     <h3>Please, enter you  information</h3>
+    
 
     <div class="form-group">
-        <label>Vælg kunde</label><select asp-for="@Model.Student.Navn" class="form-control">
+        <label>Vælg kunde</label><select asp-for="@Model.kunde.Navn" class="form-control">
             @foreach (var item in Model.Kunder)
             {
 <option value="@item.Navn">@item.Navn</option>
@@ -16,15 +17,19 @@
         </select>
     </div>
     <div class="form-group">
-        <label>Id:</label><input asp-for="@Model.Student.Id" class="form-control" />
+        <label>Id:</label><input asp-for="@Model.kunde.MedlemsID" class="form-control" />
     </div>
 
 
     <div class="form-group">
-        <label>Section:</label><input asp-for="@Model.Student.Section" class="form-control" />
+        <label>Levering:</label><input type="Radio" asp-for="@Model.kunde.Section" value="Levering" class="form-control" />
+        <label>Afhentning:</label><input type="Radio" asp-for="@Model.kunde.Section" value="Afhentning" class="form-control" />
     </div>
     <div class="text-center">
         <input class="btn btn-primary" type="submit" value="Complete Order" />
     </div>
 </form>
+
+
+
 

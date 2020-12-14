@@ -17,14 +17,7 @@ namespace CoopApp
 
             return System.Text.Json.JsonSerializer.Deserialize<List<Food>>(jsonString);
         }
-     
-       /* public static Dictionary<int, Food> ReadJson(string JsonFileName)
-        {
-            string jsonString = File.ReadAllText(JsonFileName);
-
-            return JsonConvert.DeserializeObject<Dictionary<int, Food>>(jsonString);
-        }
-       */
+    
 
 
         public static List<Order> ReadJsonOrder(string JsonFileName)

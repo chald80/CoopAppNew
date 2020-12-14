@@ -9,7 +9,7 @@ namespace CoopApp.Models
 {
     public class Kunde
     {
-        public int MellemsID { get; set; }
+        public int MedlemsID { get; set; }
         public string Navn { get; set; }
         public string Adresse { get; set; }
         public string PostNR { get; set; }

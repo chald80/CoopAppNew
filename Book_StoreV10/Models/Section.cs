@@ -7,8 +7,8 @@ namespace CoopApp.Models
 {
    public enum Section
     {   
-        IT,
-        Marketing,
-        Business
+        Afhentning,
+        Levering,
+        
     }
 }

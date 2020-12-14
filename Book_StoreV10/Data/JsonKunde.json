@@ -6,8 +6,11 @@
     "PostNR": "4040",
     "Mail": "null@null.null",
     "Telefon": "123",
-    "Password": "null"
-
+    "Password": "null",
+    "OrderID": null,
+    "Section": 0,
+    "Id": 0,
+    "Name": null
   },
   {
     "MellemsID": 133,
@@ -16,7 +19,36 @@
     "PostNR": "2020",
     "Mail": "123",
     "Telefon": "123",
-    "Password": "123"
-
+    "Password": "123",
+    "OrderID": null,
+    "Section": 0,
+    "Id": 0,
+    "Name": null
+  },
+  {
+    "MellemsID": 43545,
+    "Navn": "Yes man",
+    "Adresse": "røvhul",
+    "PostNR": "3434",
+    "Mail": "jlkdfjsl",
+    "Telefon": "6114 rendmig",
+    "Password": "4353454",
+    "OrderID": null,
+    "Section": 0,
+    "Id": 0,
+    "Name": null
+  },
+  {
+    "MellemsID": 51,
+    "Navn": "Aleksander",
+    "Adresse": "Rytterstien 4",
+    "PostNR": "4030",
+    "Mail": "Sanderkruse1987@gmail.com",
+    "Telefon": "60469691",
+    "Password": "123",
+    "OrderID": null,
+    "Section": 0,
+    "Id": 0,
+    "Name": null
   }
 ]

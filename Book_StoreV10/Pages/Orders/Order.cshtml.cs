@@ -7,28 +7,35 @@ using CoopApp.Repositories;
 using CoopApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using CoopApp.Interfaces;
+
 
 namespace CoopApp
 {
     public class OrderModel : PageModel
     {
         private JsonOrderRepository repository;
+        
+
 
         private ShoppingCartService cart;
 
-        public Kunde Student { get; set; }
+        public Kunde kunde { get; set; }
         public Order Order { get; set; }   
         public List<Food> cartItems { get; set; }
+        
 
         public OrderModel(JsonOrderRepository repoService, ShoppingCartService cartService)
         {
             repository = repoService;
             cart = cartService;
+            
         }
 
         public IActionResult OnGet(Kunde st)
         {
-            Student = st;              
+            
+            kunde = st;              
             cartItems = cart.GetOrderedFoods();
             if (cartItems?.Count() <= 0)
             {

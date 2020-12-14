@@ -9,14 +9,23 @@ namespace CoopApp.Services
     public class ShoppingCartService
     {
         List<Food>  _cartItems;
+        List<Kunde> _KundeKort;
         public ShoppingCartService()
         {
             _cartItems = new List<Food>();
+            _KundeKort = new List<Kunde>();
         }
+
+       
 
         public void Add(Food food)
         {
             _cartItems.Add(food);
+        }
+
+        public void Add(Kunde kunde)
+        {
+            _KundeKort.Add(kunde);
         }
 
         public List<Food> GetOrderedFoods()
@@ -24,7 +33,12 @@ namespace CoopApp.Services
             return _cartItems;
         }
 
-       public void RemoveFood(double VareNumer)
+        public List<Kunde> GetKundeOrder()
+        {
+            return _KundeKort;
+        }
+
+        public void RemoveFood(double VareNumer)
         {
             foreach (var food in _cartItems)
             {

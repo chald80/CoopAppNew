@@ -1,94 +1,897 @@
 [
-    {
-        "OrderID": 1,
-        "PostNummer": 34,
-        "Student": {
-            "Id": 1,
-            "Name": "mohammed",
-            "Section": 1
-        },
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "mohammed",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-11-06T21:15:00.6206645+01:00"
-    },
-    {
-        "OrderID": 2,
-        "PostNummer": 11111,
-        "Student": {
-            "Id": 4,
-            "Name": "ib",
-            "Section": 0
-        },
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            },
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-12-07T21:15:46.7043748+01:00"
-    },
-    {
-        "OrderID": 3,
-        "PostNummer": 234,
-        "Student": {
-            "Id": 3,
-            "Name": "ib",
-            "Section": 0
-        },
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            },
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-12-07T22:38:52.3468223+01:00"
-    },
-    {
-        "OrderID": 4,
-        "PostNummer": 1,
-        "Kunde": [
-            {
-                "Navn": "Jacob"
-            }
-        ],
-
-
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-12-08T09:37:11.3739441+01:00"
-    }
+  {
+    "PostNummer": 34,
+    "OrderID": 1,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-11-06T21:15:00.6206645+01:00"
+  },
+  {
+    "PostNummer": 11111,
+    "OrderID": 2,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      },
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-07T21:15:46.7043748+01:00"
+  },
+  {
+    "PostNummer": 234,
+    "OrderID": 3,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      },
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-07T22:38:52.3468223+01:00"
+  },
+  {
+    "PostNummer": 1,
+    "OrderID": 4,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-08T09:37:11.3739441+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 5,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T11:12:42.0647437+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 6,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T11:43:03.4487625+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 7,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T11:46:48.967214+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 8,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 65.0,
+        "Navn": "kød",
+        "Pris": 70.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 1223231.0,
+        "Fedt": 12.0,
+        "Kulhydrat": 12.0,
+        "Protein": 12.0,
+        "ImageName": "vxvv"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T11:55:44.5741851+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 9,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 65.0,
+        "Navn": "kød",
+        "Pris": 70.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 1223231.0,
+        "Fedt": 12.0,
+        "Kulhydrat": 12.0,
+        "Protein": 12.0,
+        "ImageName": "vxvv"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T12:09:44.2281213+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 10,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 65.0,
+        "Navn": "kød",
+        "Pris": 70.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 1223231.0,
+        "Fedt": 12.0,
+        "Kulhydrat": 12.0,
+        "Protein": 12.0,
+        "ImageName": "vxvv"
+      },
+      {
+        "VareNummer": 50.0,
+        "Navn": "Røvhuller",
+        "Pris": 35.0,
+        "Producent": "rdfsdf",
+        "SidsteSalgsDato": 435435.0,
+        "Fedt": 45354.0,
+        "Kulhydrat": 45.0,
+        "Protein": 43545.0,
+        "ImageName": "hej.gif"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T12:37:04.3668897+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 11,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 50.0,
+        "Navn": "Røvhuller",
+        "Pris": 35.0,
+        "Producent": "rdfsdf",
+        "SidsteSalgsDato": 435435.0,
+        "Fedt": 45354.0,
+        "Kulhydrat": 45.0,
+        "Protein": 43545.0,
+        "ImageName": "hej.gif"
+      },
+      {
+        "VareNummer": 50.0,
+        "Navn": "Røvhuller",
+        "Pris": 35.0,
+        "Producent": "rdfsdf",
+        "SidsteSalgsDato": 435435.0,
+        "Fedt": 45354.0,
+        "Kulhydrat": 45.0,
+        "Protein": 43545.0,
+        "ImageName": "hej.gif"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T12:49:13.2762233+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 12,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 50.0,
+        "Navn": "Røvhuller",
+        "Pris": 35.0,
+        "Producent": "rdfsdf",
+        "SidsteSalgsDato": 435435.0,
+        "Fedt": 45354.0,
+        "Kulhydrat": 45.0,
+        "Protein": 43545.0,
+        "ImageName": "hej.gif"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T12:53:47.1985521+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 13,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T13:02:14.7493218+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 14,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T13:18:32.7859723+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 15,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T13:20:27.5368307+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 16,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 50.0,
+        "Navn": "Røvhuller",
+        "Pris": 35.0,
+        "Producent": "rdfsdf",
+        "SidsteSalgsDato": 435435.0,
+        "Fedt": 45354.0,
+        "Kulhydrat": 45.0,
+        "Protein": 43545.0,
+        "ImageName": "hej.gif"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T13:31:37.493248+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 17,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T13:34:12.6020428+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 18,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 55.0,
+        "Navn": "kød",
+        "Pris": 444.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 1223231.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T13:38:27.9462753+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 19,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T13:48:21.8635995+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 20,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 51.0,
+        "Navn": "FLÆSK",
+        "Pris": 123.0,
+        "Producent": "Butchers",
+        "SidsteSalgsDato": 23112020.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 50.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T13:56:05.3133537+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 21,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 51.0,
+        "Navn": "FLÆSK",
+        "Pris": 123.0,
+        "Producent": "Butchers",
+        "SidsteSalgsDato": 23112020.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 50.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T13:58:39.1076505+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 22,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T14:01:36.4398849+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 23,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T14:02:28.2174901+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 24,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T14:02:52.1569825+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 25,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T14:03:28.9121248+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 26,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": null,
+    "DateTime": "2020-12-11T14:04:32.339883+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 27,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:12:10.6175249+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 28,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:23:23.0737371+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 29,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:25:38.2569711+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 30,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 0.0,
+        "Navn": null,
+        "Pris": 0.0,
+        "Producent": null,
+        "SidsteSalgsDato": 0.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:26:41.2114499+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 31,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 51.0,
+        "Navn": "FLÆSK",
+        "Pris": 123.0,
+        "Producent": "Butchers",
+        "SidsteSalgsDato": 23112020.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 50.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:31:54.3707608+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 32,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 50.0,
+        "Navn": "Røvhuller",
+        "Pris": 35.0,
+        "Producent": "rdfsdf",
+        "SidsteSalgsDato": 435435.0,
+        "Fedt": 45354.0,
+        "Kulhydrat": 45.0,
+        "Protein": 43545.0,
+        "ImageName": "hej.gif"
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:32:43.1088624+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 33,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 51.0,
+        "Navn": "FLÆSK",
+        "Pris": 123.0,
+        "Producent": "Butchers",
+        "SidsteSalgsDato": 23112020.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 50.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:35:23.5431902+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 34,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 51.0,
+        "Navn": "FLÆSK",
+        "Pris": 123.0,
+        "Producent": "Butchers",
+        "SidsteSalgsDato": 23112020.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 50.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:37:17.4781019+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 35,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 51.0,
+        "Navn": "FLÆSK",
+        "Pris": 123.0,
+        "Producent": "Butchers",
+        "SidsteSalgsDato": 23112020.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 50.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:39:44.10481+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 36,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 80.0,
+        "Navn": "Fisk",
+        "Pris": 200.0,
+        "Producent": "Fisk",
+        "SidsteSalgsDato": 12354.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 52.0,
+        "ImageName": "bo"
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:41:35.7028181+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 37,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 51.0,
+        "Navn": "FLÆSK",
+        "Pris": 123.0,
+        "Producent": "Butchers",
+        "SidsteSalgsDato": 23112020.0,
+        "Fedt": 50.0,
+        "Kulhydrat": 50.0,
+        "Protein": 50.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-11T14:49:25.0109004+01:00"
+  }
 ]
