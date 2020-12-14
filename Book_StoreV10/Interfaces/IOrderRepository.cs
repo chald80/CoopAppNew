@@ -11,6 +11,8 @@ namespace CoopApp.Interfaces
         void AddOrder(Order order);
         List<Order> GetAllOrders();
         List<Order> FilterOrder(string crtiteria);
+       
         //Order GetOrder(int OrderID);
+
     }
 }

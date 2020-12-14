@@ -28,11 +28,10 @@ namespace CoopApp
         public List<Kunde> Kunder { get; private set; }
 
         public List<Order> Orders { get; private set; }
-
         public Kunde Kunde { get; private set; }
         public Order Order { get; private set; }
-
         public string FilterCriteria { get; set; }
+       
 
         public IActionResult OnGet()
         {
