@@ -18,10 +18,10 @@ namespace CoopApp
         private ShoppingCartService cart;
 
         [BindProperty]
-        public Kunde Student { get; set; }
+        public Kunde kunde { get; set; }
         public Order Order { get; set; }
         public List<Kunde> Kunder { get; set; }
-        public Kunde Kunde { get; set; }
+       // public Kunde Kunde { get; set; }
 
         public CheckOutModel(JsonOrderRepository repo, ShoppingCartService cartService, IKunderRepository repoKunde)
         {
@@ -40,13 +40,18 @@ namespace CoopApp
                 return Page();
             }
             Order order = new Order();
-            order.OrderID = 12;
-            order.MellemsID = Student;
+            //order.OrderID = 12;
+            //order.MellemsID = Student;
             order.Foods = cart.GetOrderedFoods();
             order.DateTime = DateTime.Now;
-            Kunder = repoK.GetAllKunder();
+            order.Kunde = cart.GetKundeOrder();
+            order.Levering = kunde.Levering;
+            order.Navn = kunde.Navn;
+            order.PostNummer = kunde.Post;
+
+
             repository.AddOrder(order);
-            return RedirectToPage("Order", Student);
+            return RedirectToPage("Order", kunde);
         }
     }
 }

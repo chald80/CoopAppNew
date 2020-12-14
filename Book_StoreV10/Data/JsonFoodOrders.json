@@ -1,94 +1,109 @@
 [
-    {
-        "OrderID": 1,
-        "PostNummer": 34,
-        "Student": {
-            "Id": 1,
-            "Name": "mohammed",
-            "Section": 1
-        },
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "mohammed",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-11-06T21:15:00.6206645+01:00"
-    },
-    {
-        "OrderID": 2,
-        "PostNummer": 11111,
-        "Student": {
-            "Id": 4,
-            "Name": "ib",
-            "Section": 0
-        },
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            },
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-12-07T21:15:46.7043748+01:00"
-    },
-    {
-        "OrderID": 3,
-        "PostNummer": 234,
-        "Student": {
-            "Id": 3,
-            "Name": "ib",
-            "Section": 0
-        },
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            },
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-12-07T22:38:52.3468223+01:00"
-    },
-    {
-        "OrderID": 4,
-        "PostNummer": 1,
-        "Kunde": [
-            {
-                "Navn": "Jacob"
-            }
-        ],
-
-
-        "Foods": [
-            {
-                "Price": 200.0,
-                "Title": "Programming",
-                "ISBN": "111",
-                "Author": "allan",
-                "ImageName": "Coders.jfif"
-            }
-        ],
-        "DateTime": "2020-12-08T09:37:11.3739441+01:00"
-    }
+  {
+    "PostNummer": "0",
+    "OrderID": 42,
+    "Levering": "Afhentning",
+    "MedlemsID": null,
+    "Navn": "Jacob",
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 65.0,
+        "Navn": "kød",
+        "Pris": 70.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 1223231.0,
+        "Fedt": 12.0,
+        "Kulhydrat": 12.0,
+        "Protein": 12.0,
+        "ImageName": "vxvv"
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-14T10:52:13.7897002+01:00"
+  },
+  {
+    "PostNummer": "0",
+    "OrderID": 43,
+    "Levering": "Levering",
+    "MedlemsID": null,
+    "Navn": "Yes man",
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 65.0,
+        "Navn": "kød",
+        "Pris": 70.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 1223231.0,
+        "Fedt": 12.0,
+        "Kulhydrat": 12.0,
+        "Protein": 12.0,
+        "ImageName": "vxvv"
+      },
+      {
+        "VareNummer": 65.0,
+        "Navn": "kød",
+        "Pris": 70.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 1223231.0,
+        "Fedt": 12.0,
+        "Kulhydrat": 12.0,
+        "Protein": 12.0,
+        "ImageName": "vxvv"
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-14T10:54:24.6805895+01:00"
+  },
+  {
+    "PostNummer": "abcd",
+    "OrderID": 44,
+    "Levering": "Levering",
+    "MedlemsID": null,
+    "Navn": "Jacob",
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 50.0,
+        "Navn": "Røvhuller",
+        "Pris": 35.0,
+        "Producent": "rdfsdf",
+        "SidsteSalgsDato": 435435.0,
+        "Fedt": 45354.0,
+        "Kulhydrat": 45.0,
+        "Protein": 43545.0,
+        "ImageName": "hej.gif"
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-14T11:21:53.8607592+01:00"
+  },
+  {
+    "PostNummer": "1234",
+    "OrderID": 45,
+    "Levering": "Afhentning",
+    "MedlemsID": null,
+    "Navn": "Aleksander",
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 65.0,
+        "Navn": "kød",
+        "Pris": 70.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 1223231.0,
+        "Fedt": 12.0,
+        "Kulhydrat": 12.0,
+        "Protein": 12.0,
+        "ImageName": "vxvv"
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-14T11:24:57.1361492+01:00"
+  }
 ]

@@ -23,6 +23,7 @@ namespace CoopApp
             repo = repository;
             ChartService = chart;
             OrderedFoods = new List<Food>();
+            
        }
         public IActionResult OnGet(double VareNummer)
         {

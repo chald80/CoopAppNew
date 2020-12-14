@@ -15,17 +15,14 @@
     <a asp-page="CreateKunde">Tilføj kunde</a>
 </p>
 
-<h5>The number of foods is : @Model.Kunder.Count</h5>
-
-
 <h6 style="color:blue"> Create a new Kunde</h6>
 <form class="form-horizontal" method="post">
     <div asp-validation-summary="ModelOnly"></div>
     <div class="form-group" style="width:25%">
-        <label asp-for="@Model.Kunde.MellemsID" class="col-sm-2 control-label">MellemsID</label>
+        <label asp-for="@Model.Kunde.MedlemsID" class="col-sm-2 control-label">MellemsID</label>
         <div class="col-sm-10">
-            <input asp-for="@Model.Kunde.MellemsID" type="text" class="form-control">
-            <span asp-validation-for="@Model.Kunde.MellemsID" class="text-danger"></span>
+            <input asp-for="@Model.Kunde.MedlemsID" type="text" class="form-control">
+            <span asp-validation-for="@Model.Kunde.MedlemsID" class="text-danger"></span>
         </div>
     </div>
     <div style="width:25%" class="form-group">
@@ -44,10 +41,10 @@
     </div>
 
     <div style="width:25%" class="form-group">
-        <label asp-for="@Model.Kunde.PostNR class=" col-sm-2 control-label">PostNR</label>
+        <label asp-for="@Model.Kunde.Postnummer class=" col-sm-2 control-label">PostNR</label>
         <div class="col-sm-10">
-            <input asp-for="@Model.Kunde.PostNR" type="text" class="form-control">
-            <span asp-validation-for="@Model.Kunde.PostNR" class="text-danger"></span>
+            <input asp-for="@Model.Kunde.Postnummer" type="text" class="form-control">
+            <span asp-validation-for="@Model.Kunde.Postnummer" class="text-danger"></span>
         </div>
     </div>
 
@@ -80,7 +77,7 @@
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="border-light">
-                Add Food
+                Add Kunde
             </button>
         </div>
     </div>

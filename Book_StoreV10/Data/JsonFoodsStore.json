@@ -53,5 +53,27 @@
     "Kulhydrat": 50.0,
     "Protein": 52.0,
     "ImageName": "bo"
+  },
+  {
+    "VareNummer": 50.0,
+    "Navn": "Røvhuller",
+    "Pris": 35.0,
+    "Producent": "rdfsdf",
+    "SidsteSalgsDato": 435435.0,
+    "Fedt": 45354.0,
+    "Kulhydrat": 45.0,
+    "Protein": 43545.0,
+    "ImageName": "hej.gif"
+  },
+  {
+    "VareNummer": 51.0,
+    "Navn": "FLÆSK",
+    "Pris": 123.0,
+    "Producent": "Butchers",
+    "SidsteSalgsDato": 23112020.0,
+    "Fedt": 50.0,
+    "Kulhydrat": 50.0,
+    "Protein": 50.0,
+    "ImageName": null
   }
 ]
