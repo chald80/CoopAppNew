@@ -9,6 +9,5 @@ namespace CoopApp.Models
     {   
         Afhentning,
         Levering,
-        
     }
 }

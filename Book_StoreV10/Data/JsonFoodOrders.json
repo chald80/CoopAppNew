@@ -893,5 +893,28 @@
     ],
     "Kunde": [],
     "DateTime": "2020-12-11T14:49:25.0109004+01:00"
+  },
+  {
+    "PostNummer": 0,
+    "OrderID": 38,
+    "MedlemsID": null,
+    "Navn": null,
+    "Adresse": null,
+    "PostNR": null,
+    "Foods": [
+      {
+        "VareNummer": 55.0,
+        "Navn": "kød",
+        "Pris": 444.0,
+        "Producent": "hhfd",
+        "SidsteSalgsDato": 1223231.0,
+        "Fedt": 0.0,
+        "Kulhydrat": 0.0,
+        "Protein": 0.0,
+        "ImageName": null
+      }
+    ],
+    "Kunde": [],
+    "DateTime": "2020-12-14T10:04:59.823386+01:00"
   }
 ]
