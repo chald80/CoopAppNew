@@ -1,30 +1,24 @@
 {
-  "45": {
-    "Id": 45,
-    "Name": "Vegetarian",
-    "Description": "no description",
-    "Price": 77.0,
-    "ImageName": "Bufalla_piza.jfif"
+  "5100": {
+    "VareNummer": 5100,
+    "Navn": "kødh",
+    "Pris": 70.0,
+    "Producent": "hhfd",
+    "SidsteSalgsDato": 12354.0,
+    "Fedt": 12.0,
+    "Kulhydrat": 12.0,
+    "Protein": 12.0,
+    "ImageName": "bo"
   },
-  "78": {
-    "Id": 78,
-    "Name": "Vegetarian",
-    "Description": "no description",
-    "Price": 77.0,
-    "ImageName": "Bufalla_piza.jfif"
-  },
-  "4": {
-    "Id": 4,
-    "Name": "uuuii",
-    "Description": "dfd",
-    "Price": 100.0,
-    "ImageName": null
-  },
-  "5555": {
-    "Id": 5555,
-    "Name": "eqwe",
-    "Description": "eqee",
-    "Price": 60.0,
-    "ImageName": "qeqwe"
+  "69": {
+    "VareNummer": 69,
+    "Navn": "kød",
+    "Pris": 444.0,
+    "Producent": "Fisk",
+    "SidsteSalgsDato": 12354.0,
+    "Fedt": 50.0,
+    "Kulhydrat": 12.0,
+    "Protein": 52.0,
+    "ImageName": "vxvv"
   }
 }

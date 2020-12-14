@@ -28,9 +28,11 @@ namespace CoopApp.Repositories
             return foundFood;
         }
 
-        void IFoodsRepository.DeleteFood(int VareNummer)
+        public void DeleteFood(int VareNummer)
         {
-            throw new NotImplementedException();
+            Dictionary<int, Food> foods = GetAllFoods();
+            foods.Remove(VareNummer);
+            JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
         }
 
         void IFoodsRepository.UpdateFood(Food food)
