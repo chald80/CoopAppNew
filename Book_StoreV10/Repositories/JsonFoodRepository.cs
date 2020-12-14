@@ -11,24 +11,21 @@ namespace CoopApp.Repositories
     {
         string JsonFileName = @"C:\Users\Anders\OneDrive\Dokumenter\skole\Projekt\CoopAppDavid.AleksEdit.11-12-1455 - Kopi\CoopApp-master\Book_StoreV10\Data\JsonFoodsStore.json";
 
-        public Dictionary<VareNummer, Food> GetAllFoods()
+        public Dictionary<int, Food> GetAllFoods()
         {
             return JsonFileReader.ReadJsonFood(JsonFileName);
         }
         public void AddFood(Food Food)
         {
-            Dictionary<VareNummer, Food> Foods = GetAllFoods().ToList();
-            Foods.Add(Food);
-            JsonFileWritter.WriteToJsonFood(Foods, JsonFileName);
+            Dictionary<int, Food> foods = GetAllFoods();
+            foods.Add(Food.VareNummer, Food);
+            JsonFileWritter.WriteToJsonFood(foods, JsonFileName);
         }
         public Food GetFood(int VareNummer)
         {
-            foreach (var b in GetAllFoods())
-            {
-                if (b.VareNummer == VareNummer)
-                    return b;
-            }
-            return new Food();
+            Dictionary<int, Food> foods = GetAllFoods();
+            Food foundFood = foods[VareNummer];
+            return foundFood;
         }
 
         void IFoodsRepository.DeleteFood(int VareNummer)

@@ -25,7 +25,7 @@ namespace CoopApp
             OrderedFoods = new List<Food>();
             
        }
-        public IActionResult OnGet(double VareNummer)
+        public IActionResult OnGet(int VareNummer)
         {
             Food food = repo.GetFood(VareNummer);
             ChartService.Add(food);

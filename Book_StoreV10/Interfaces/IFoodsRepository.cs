@@ -8,7 +8,7 @@ namespace CoopApp.Interfaces
 {
     public interface IFoodsRepository
     {
-        Dictionary<VareNummer, Food> GetAllFoods();
+        Dictionary<int, Food> GetAllFoods();
         void AddFood(Food food);
         Food GetFood(int VareNummer);
         void DeleteFood(int VareNumer);
